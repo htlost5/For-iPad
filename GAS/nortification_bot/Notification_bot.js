@@ -58,17 +58,19 @@ function sendLineMessage() {
   var foundCells = findExactNumber("シート1", sheetValue, day)
   Logger.log(foundCells);
   
-  var message = month + sheetValue
+  var message = month + "月" + day + "日"
   
   var options = {
     "method": "post",
     "headers": {"Authorization": "Bearer " + token},
     "payload": {"message": message},
-    "muteHttpExceptions": true
+    "muteHttpExceptions": true,
+    "contentType": 'application/x-www-form-urlencoded'
   };
   
   try {
     var response = UrlFetchApp.fetch("https://notify-api.line.me/api/notify", options);
+
     Logger.log("応答コード: " + response.getResponseCode());
     Logger.log("応答内容: " + response.getContentText());
     Logger.log("送信したメッセージ: " + message);
