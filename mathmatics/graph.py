@@ -7,6 +7,6 @@ y= x**2
 plt.plot(x, y)
 plt.title ("y = x^2")
 plt.xlabel("x")
-plt.ylabtel("y")
+plt.ylabel("y")
 plt.grid(True)
 plt.show
