@@ -2,7 +2,6 @@ import os
 os.environ['SDL_AUDIODRIVER'] = 'dummy'
 import pygame
 pygame.init()
-
 # ウィンドウサイズの設定
 width, height = 640, 480
 screen = pygame.display.set_mode((width, height))
