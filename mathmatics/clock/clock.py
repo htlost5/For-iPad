@@ -13,4 +13,4 @@ def h_m(y):
 y = int(input("what time? → "))
 calc, count_minutes, count_seconds = h_m(y)
 
-print(f'{y}時{count_minutes}分{count_seconds:.2f}秒')
+print(f'{y}時{count_minutes}分{count_seconds:.2f}秒')pep

@@ -1,0 +1,1 @@
+git add . & git commot -m"allcommit" & git push -f origin main

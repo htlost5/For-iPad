@@ -1,12 +1,12 @@
 def convert_to_table(input_text):
     lines = input_text.split('\n')
+    data = "| Date | Event |\n|------|-------|\n"  # テーブルのヘッダーを追加
     for line in lines:
-        parts = line.split()
-        if len(parts) >= 2:
+        parts = line.split(maxsplit=1)  # 最初のスペースで分割
+        if len(parts) == 2:
             date = parts[0].replace('.', '/')
-            event = ' '.join(parts[1:])
-            data = f"| {date} | {event} |\n"
-    
+            event = parts[1]
+            data += f"{date} | {event} \n"
     return data
 
 # 入力ファイルから読み取り

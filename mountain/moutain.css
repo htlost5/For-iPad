@@ -1,0 +1,47 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* Background image */
+  .bg {
+    background-image: url("header.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Menu */
+  .menu {
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 38%;
+    word-spacing: 70px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  #header {
+    position: absolute;
+    margin-top: 12%;
+    margin-left: 10%;
+  }
+  
+  /* Media Query for small screens */
+  @media only screen and (max-width: 600px) {
+    #header {
+      position: absolute;
+      margin-left: 15%;
+      margin-top: 40%;
+    }
+  
+    .menu {
+      position: absolute;
+      margin-top: 3%;
+      margin-left: 25%;
+      word-spacing: 30px;
+    }
+  }
