@@ -1,6 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-import re
 
 def get_page_content(url):
     response = requests.get(url)
